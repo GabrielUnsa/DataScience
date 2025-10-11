@@ -1,0 +1,36 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Ejercicio
+Objective:  z = 1500 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS    1500.00000   -1500.00000          -Inf     2750.00000      -1.00000        .      calcio
+                                            .               +Inf     1500.00000          +Inf          +Inf
+
+     2 grasas       BS      13.00000      -5.00000       8.00000       21.00000     -31.25000    1093.75000 carbohidratos
+                                            .               +Inf        6.33333     250.00000    4750.00000 calcio
+
+     3 carbohidratos
+                    NL      19.00000        .           19.00000       13.37500     -27.77778    1343.75000 grasas
+                                          27.77778          +Inf       28.00000          +Inf    1750.00000 x1
+
+     4 calcio       NL       7.00000        .            7.00000        4.75000    -138.88889    1187.50000 x1
+                                         138.88889          +Inf       16.00000          +Inf    2750.00000 grasas
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Ejercicio
+Objective:  z = 1500 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS      10.00000      50.00000        .            50.00000      18.75000    1187.50000 calcio
+                                            .               +Inf           -Inf      75.00000    1750.00000 carbohidratos
+
+     2 x2           BS      40.00000      25.00000        .            70.00000      16.66667    1166.66667 carbohidratos
+                                            .               +Inf       10.00000      66.66667    3166.66667 calcio
+
+End of report

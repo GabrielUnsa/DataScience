@@ -1,0 +1,41 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Ejercicio
+Objective:  z = 1800 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS    1800.00000   -1800.00000          -Inf     1500.00000      -1.00000        .      limite
+                                            .               +Inf     1800.00000          +Inf          +Inf
+
+     2 avellanas    NS     500.00000        .          500.00000      450.00000          -Inf    1750.00000 x1
+                                           1.00000     500.00000      600.00000          +Inf    1900.00000 chocolate
+
+     3 mani         NU    1000.00000        .               -Inf      800.00000      -1.00000    1600.00000 chocolate
+                                           1.00000    1000.00000     1100.00000          +Inf    1900.00000 x1
+
+     4 chocolate    BS     300.00000     200.00000          -Inf         .           -1.00000    1500.00000 limite
+                                            .          500.00000      700.00000       1.00000    2100.00000 mani
+
+     5 limite       NU     100.00000        .               -Inf         .           -3.00000    1500.00000 x1
+                                           3.00000     100.00000      166.66667          +Inf    2000.00000 chocolate
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Ejercicio
+Objective:  z = 1800 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS     100.00000       2.00000        .              .           -1.00000    1500.00000 limite
+                                            .               +Inf      300.00000       3.00000    1900.00000 mani
+
+     2 x2           BS     400.00000       3.00000        .           200.00000       2.00000    1400.00000 mani
+                                            .               +Inf      500.00000       6.00000    3000.00000 limite
+
+     3 x3           BS     100.00000       4.00000        .              .            1.00000    1500.00000 limite
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+End of report

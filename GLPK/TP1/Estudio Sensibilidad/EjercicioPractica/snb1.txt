@@ -1,0 +1,35 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    EjemploClasePractica
+Objective:  z = 8425 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS    8425.00000   -8425.00000          -Inf     8400.00000      -1.00000        .      r3
+                                            .               +Inf     8425.00000          +Inf          +Inf
+
+     2 r1           NU     560.00000        .               -Inf      188.33333     -10.00000    4708.33333 x2
+                                          10.00000     560.00000      565.00000          +Inf    8475.00000 x1
+
+     3 r2           BS     421.25000     188.75000          -Inf      420.00000     -20.00000        .      r3
+                                            .          610.00000      421.25000          +Inf          +Inf
+
+     4 r3           NU     565.00000        .               -Inf      560.00000      -5.00000    8400.00000 x1
+                                           5.00000     565.00000     1320.00000          +Inf   12200.00000 r2
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    EjemploClasePractica
+Objective:  z = 8425 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS        .62500     100.00000        .                -Inf      60.00000    8400.00000 r3
+                                            .               +Inf       47.08333     180.00000    8475.00000 r1
+
+     2 x2           BS      69.68750     120.00000        .                -Inf      66.66667    4708.33333 r1
+                                            .               +Inf       70.00000     200.00000   14000.00000 r3
+
+End of report

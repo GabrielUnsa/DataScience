@@ -1,0 +1,32 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Ejercicio
+Objective:  z = 1920 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS    1920.00000   -1920.00000          -Inf     1760.00000      -1.00000        .      x1
+                                            .               +Inf     1920.00000          +Inf          +Inf
+
+     2 ensamblado   BS    4800.00000    1200.00000          -Inf         .            -.40000        .      terminado
+                                            .         6000.00000     7200.00000        .13333    2560.00000 x1
+
+     3 terminado    NU    4800.00000        .               -Inf         .            -.40000        .      x2
+                                            .40000    4800.00000     6000.00000          +Inf    2400.00000 ensamblado
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Ejercicio
+Objective:  z = 1920 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           NL        .           20.00000        .                -Inf          -Inf          +Inf
+                                          -4.00000          +Inf       40.00000      24.00000    1760.00000 ensamblado
+
+     2 x2           BS     160.00000      12.00000        .            80.00000      10.00000    1600.00000 x1
+                                            .               +Inf      160.00000          +Inf          +Inf
+
+End of report

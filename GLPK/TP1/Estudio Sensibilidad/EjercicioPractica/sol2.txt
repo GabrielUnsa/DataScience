@@ -1,0 +1,38 @@
+Problem:    EjemploPractica2
+Rows:       4
+Columns:    2
+Non-zeros:  8
+Status:     OPTIMAL
+Objective:  z = 8475 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 z            B           8475                             
+     2 r1           NU           565                         565            10 
+     3 r2           B         423.75                         610 
+     4 r3           NU           565                         565             5 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x1           B              0             0               
+     2 x2           B         70.625             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.84e-14 on column 2
+        max.rel.err = 1.18e-16 on column 2
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

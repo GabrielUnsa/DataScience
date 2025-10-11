@@ -1,0 +1,32 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Ejercicio
+Objective:  z = 320000 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS  320000.00000 -320000.00000          -Inf   600000.00000      -1.00000        .      mujeres
+                                            .               +Inf   320000.00000          +Inf          +Inf
+
+     2 mujeres      NL      28.00000        .           28.00000        4.00000   -5000.00000  200000.00000 x1
+                                        5000.00000          +Inf       84.00000          +Inf  600000.00000 x2
+
+     3 hombres      NL      24.00000        .           24.00000        8.00000   -7500.00000  200000.00000 x2
+                                        7500.00000          +Inf      168.00000          +Inf       1.4e+06 x1
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Ejercicio
+Objective:  z = 320000 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x1           BS       3.60000   50000.00000        .            12.00000   16666.66667  200000.00000 mujeres
+                                            .               +Inf           -Inf  350000.00000       1.4e+06 hombres
+
+     2 x2           BS       1.40000  100000.00000        .            14.00000   14285.71429  200000.00000 hombres
+                                            .               +Inf           -Inf  300000.00000  600000.00000 mujeres
+
+End of report
