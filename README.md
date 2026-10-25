@@ -4,16 +4,20 @@ Material académico de ciencia de datos con Python y de investigación operativa
 
 Estos ejercicios prácticos fueron realizados durante el cursado de diversas materias mientras estudiaba la **Licenciatura en Análisis de Sistemas (Plan 2010)** de la **Universidad Nacional de Salta**.
 
-**Materia:** ______________________________
+**Materia: Metodos Cuantitativos para la Toma de Decisiones**
 
 ## Contenido
 
-- [Estructura](#estructura)
-- [Análisis de datos con Python](#análisis-de-datos-con-python)
-- [Modelos de optimización con GLPK](#modelos-de-optimización-con-glpk)
-- [Preparación y uso](#preparación-y-uso)
-- [Estado y validación](#estado-y-validación)
-- [Licencia](#licencia)
+- [DataScience — Análisis de datos y optimización](#datascience--análisis-de-datos-y-optimización)
+  - [Contenido](#contenido)
+  - [Estructura](#estructura)
+  - [Análisis de datos con Python](#análisis-de-datos-con-python)
+  - [Modelos de optimización con GLPK](#modelos-de-optimización-con-glpk)
+  - [Preparación y uso](#preparación-y-uso)
+    - [Python](#python)
+    - [GLPK](#glpk)
+  - [Estado y validación](#estado-y-validación)
+  - [Licencia](#licencia)
 
 ## Estructura
 
